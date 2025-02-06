@@ -10,7 +10,7 @@ int main() {
     String myString(userInput);
 
     // Виведення початкового рядка
-    std::cout << "Рядок: " << myString.getValue() << std::endl;
+    std::cout << "Введений рядок: " << myString.getValue() << std::endl;
 
     // Виведення довжини рядка
     std::cout << "Довжина рядка: " << myString.getLength() << std::endl;
