@@ -4,24 +4,17 @@
 
 #include <string>
 
-class String {
-private:
-    std:: string value; // Значення рядка
-
+class String
+{
 public:
-    // Конструктор
-    String(const std::string& val);
+    String(std::string val);
 
-    // Метод для отримання довжини рядка
-    size_t getLength() const;
+    size_t getLength();
 
-    // Метод для обернення рядка
-    std::string reverseString() const;
+    std::string reverseString();
 
-    // Метод для отримання рядка
-    std::string getValue() const;
+    std::string getValue();
+    std::string value;
 };
 
 #endif
-
-

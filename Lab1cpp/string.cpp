@@ -1,22 +1,31 @@
+
 #include "string.h"
-#include <algorithm>
 
-// Конструктор
-String::String (const std::string& val) : value(val) {}
-
-// Метод для отримання довжини рядка
-size_t String::getLength() const {
-    return value.length();
+String::String(std::string val)
+{
+    value = val; 
+   
+}
+size_t String::getLength() 
+{
+    return value.length(); 
 }
 
-// Метод для обернення рядка
-std::string String::reverseString() const {
-    std::string reversed = value;
-    std::reverse(reversed.begin(), reversed.end());
+std::string String::reverseString()
+{
+    std::string reversed;
+    for (size_t i = value.length(); i > 0; --i) 
+    {  
+        reversed += value[i - 1]; 
+    } 
     return reversed;
 }
 
-// Метод для отримання рядка
-std::string String::getValue() const {
+std::string String::getValue()
+{
     return value;
 }
+
+
+
+

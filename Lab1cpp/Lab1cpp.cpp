@@ -1,23 +1,22 @@
-﻿#include <iostream>
+﻿
+#include <iostream>
 #include "string.h"
 
-int main() {
-    std::string userInput;
-    std::cout << "Введіть рядок: ";
-    std::getline(std::cin, userInput);
+using namespace std;
 
-    // Створення об'єкта класу
-    String myString(userInput);
+int main()
+{
+    string userInput;
+    cout << "Введіть рядок: ";
+    getline(cin, userInput);
 
-    // Виведення початкового рядка
-    std::cout << "Введений рядок: " << myString.getValue() << std::endl;
+    String myString(userInput); 
 
-    // Виведення довжини рядка
-    std::cout << "Довжина рядка: " << myString.getLength() << std::endl;
+    cout << "Введений рядок: " << myString.getValue() << endl; 
 
-    // Виведення оберненого рядка
-    std::cout << "Обернений рядок: " << myString.reverseString() << std::endl;
+    cout << "Довжина рядка: " << myString.getLength() << endl;
+
+    cout << "Обернений рядок: " << myString.reverseString() << endl;
 
     return 0;
 }
-
